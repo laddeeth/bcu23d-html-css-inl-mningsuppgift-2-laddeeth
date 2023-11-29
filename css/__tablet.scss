@@ -1,0 +1,74 @@
+@media only screen and (min-width: 680px) {
+
+  header {
+
+    .menu-open,
+    .menu-close {
+      display: none;
+    }
+
+    .menu-items {
+      display: block;
+
+      font: {
+        family: $fontprimary;
+      }
+
+      ul {
+        top: 0;
+        background: none;
+        flex-direction: row;
+        height: calc(64px + (2*$padding));
+        align-items: center;
+
+        a {
+          color: $fontcolorprimary;
+        }
+
+        font: {
+          size: 1.5rem;
+        }
+
+        li {
+          margin: 0.2rem;
+
+          &:nth-child(2) {
+            margin-right: 40vw;
+          }
+
+          &:nth-child(even) {
+            &::before {
+              content: "| ";
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+  section {
+    span {
+      font-size: 3rem;
+      width: 20rem;
+    }
+
+    &:nth-child(2) {
+      background: {
+        size: calc(992px + 100vh) auto;
+        position-y: -100vh;
+        position-x: -20vw;
+      }
+
+      article {
+        justify-content: center;
+
+        p {
+          padding: $padding * 4;
+        }
+      }
+    }
+  }
+
+}

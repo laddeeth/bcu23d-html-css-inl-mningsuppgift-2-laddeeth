@@ -1,0 +1,65 @@
+@media only screen and (min-width: 992px) {
+
+    section {
+        span {
+            font-size: 4rem;
+            width: 26rem;
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-evenly;
+            background: none;
+            min-height: 656px;
+
+            background: {
+                image: url("../img/background2.webp");
+                repeat: no-repeat;
+                size: 40% 100%;
+                color: rgba(0, 0, 0, 0);
+            }
+
+            article {
+                height: calc(50vh - 64px - ($padding * 2));
+                background-color: rgba(0, 0, 0, 0);
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                font-size: 1em;
+                width: 58vw;
+                padding: $padding;
+                padding-bottom: 0;
+
+                p {
+                    padding: {
+                        top: 0;
+                        left: $padding;
+                        right: $padding;
+                        bottom: 0*$padding;
+                    }
+
+                    max-width: 29rem;
+                }
+
+                img {
+                    width: 30%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .cookies {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height:10vh;
+        p {
+            margin-right: 10%;
+            max-width: 40%;
+            text-align: left;
+        }
+    }
+}
